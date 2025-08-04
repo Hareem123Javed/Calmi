@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feel Better | Mental Health Chatbot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <!-- AOS CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+</head>
+
+<body>
+    <div id="signup-form" class="signup-modal">
+  <div class="signup-content" data-aos="zoom-in">
+    <span class="close-btn" onclick="toggleForm()">×</span>
+    <h2>Sign Up for Calmi</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="password" placeholder="Create Password" required />
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</div>
+
+  <nav>
+    <div class="nav-left">
+      <img src="calmi 3.png" alt="Calmi Logo">
+      
+    </div>
+    <div>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#signup">Sign Up</a>
+    </div>
+  </nav>
+
+  <header>
+    <div class="hero" data-aos="fade-up">
+        <strong>Calmi</strong>
+      <h1>Your Calm, One Message Away.</h1>
+      <p>Calmi is a compassionate chatbot designed to listen, support, and guide you through your thoughts. Whether you're feeling overwhelmed, anxious, or just need someone to talk to—Calmi is here, round the clock, without judgment.</p>
+      <button class="cta-btn">Get Started</button>
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png" class="hero-img" alt="Chatbot Illustration" width="200">
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <div class="feature" data-aos="fade-up">
+      <img src="https://cdn-icons-png.flaticon.com/512/3050/3050525.png" alt="24/7 Access">
+      <h3>24/7 Chat Access</h3>
+      <p>Talk to Calmi anytime, day or night — support is always just a message away.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="100">
+      <img src="secure.png" alt="Privacy">
+      <h3>Anonymous & Secure</h3>
+      <p>Your privacy matters. All conversations are encrypted and completely anonymous.</p>
+    </div>
+    <div class="feature" data-aos="fade-up" data-aos-delay="200">
+      <img src="ai.png" alt="AI Insight">
+      <h3>AI-Driven Insights</h3>
+      <p>Get helpful suggestions and mental health tips powered by intelligent, compassionate AI.</p>
+    </div>
+
+  </section>
+
+<section class="testimonial" id="testimonials">
+  <div class="slider-container" data-aos="fade-up">
+    <div class="slider" id="review-slider">
+      <div class="slide">
+        <blockquote>"Calmi is like a friend I can talk to at 3 AM. It saved me more than once."</blockquote>
+        <cite>- Alex R.</cite>
+      </div>
+      <div class="slide">
+        <blockquote>"I love how secure and anonymous it feels. I can open up without fear."</blockquote>
+        <cite>- Priya M.</cite>
+      </div>
+      <div class="slide">
+        <blockquote>"The AI insights helped me understand my emotions better. So grateful!"</blockquote>
+        <cite>- Jordan T.</cite>
+      </div>
+      <div class="slide">
+        <blockquote>“Calmi helped me during a tough week. It felt good to have someone — or something — to talk to.”</blockquote>
+        <cite>- Amina R</cite>
+      </div>
+      <div class="slide">
+        <blockquote>“I love that it is always available. No waiting, no pressure, just gentle support.” </blockquote>
+        <cite>- Ayesha R.</cite>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button onclick="prevSlide()">‹</button>
+      <button onclick="nextSlide()">›</button>
+    </div>
+  </div>
+</section>
+  <footer class="footer">
+    &copy; 2025 Calmi. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
